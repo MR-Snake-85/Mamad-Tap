@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamad Tap</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <div class="P">
+        <div class="Top">
+            <h1>Mamad Tap</h1>
+            <p>MamadCoin: <span id="points">0</span></p>
+        </div>   
+
+        <div id="button-container">
+            <div class="button" onclick="addPoint()">
+                <img src="Coin.png" alt="Button Image">
+            </div>
+        </div>
+    </div>
+    <script>
+        let points = 0;
+        function addPoint() {
+            points++;
+            document.getElementById('points').textContent = points;
+        }
+    </script>
+</body>
+</html>
